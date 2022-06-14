@@ -1,0 +1,410 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color:   black;
+}
+
+header {
+    display: flex;
+    height: 180px;
+    justify-content: center;
+    background-color: black;
+}
+
+.header_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1400px;
+}
+
+.logo img {
+    flex: 1;
+    width: 50px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.menu {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+.fieldmenu {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(25, 25, 25);
+    background-color: rgb(25, 25, 25);
+    border-radius: 35px;
+    height: 42px;
+    padding: 10px;
+    width: 430px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+nav .active a, nav a:hover {
+    font-size: 25px;
+    color: chartreuse;
+} 
+
+.head_information {
+    flex: 2;
+    display: flex;
+    justify-content: end;
+    color: aliceblue;
+    font-size: 27px;
+    padding-right: 30px;
+}
+
+.apple_icon img {
+    padding-top: 20px;
+    flex: 1;
+    width: 100px;
+    height: auto;
+}
+
+section {
+    display: flex;
+}
+
+.section_information img {
+    margin-left: 200px;
+}
+
+.macbook_information {
+    margin-top: 100px;
+}
+
+.macbook_information div {
+    margin-left: 75px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    font-size: large;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.macbook_information a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.macbook_information .active a, .macbook_information a:hover {
+    color: chartreuse;
+    font-size: 25px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.section_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.section_text div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.footer_information {
+    flex:1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_information li {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.footer_information div {
+    margin-bottom: 20px;
+    font-size:25px;
+    color: #ffffff;
+}
+
+.footer_price {
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+   
+}
+
+.footer_price .price {
+    font-size: 25px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.footer_price div {
+    font-size: 35px;
+    display: flex;
+    color: #ffffff;
+}
+
+.item_price {
+    margin-bottom: 20px;
+}
+
+.footer_price button {
+    display: flex;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color:mediumblue;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.footer_price button:hover {
+    background-color: chartreuse;
+    color: black;
+    font-size: 33px;
+    padding: 6px;
+}
+
+.footer_price a {
+    text-decoration: none;
+}
+
+.bar {
+    width: 1px;
+    height: 220px;
+    background-color: chartreuse;;
+}
+
+
+
+@media (max-width:1170px) {
+    
+    .logo img {
+        margin-left: 20px;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .macbook_information {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        margin-left: -90px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:1024px) {
+    .logo img {
+        margin-left: 20px;
+    }
+
+    .apple_icon img {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:965px) {
+
+    .logo {
+        margin-top: 30px;
+    }
+
+    .header_box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+
+    .head_information {
+        width: 400px;
+        justify-content: center;
+    }
+
+    .section_information img {
+        margin-top: 130px;
+        margin-left: 130px;
+    }
+
+}
+
+@media (max-width:835px) {
+    .macbook_information {
+        display: flex;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:870px) {
+    .section_information img {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width:768px) {
+    .section_information img {
+        width: 550px;
+        height: auto;
+        margin-left: 120px;
+    }
+}
+
+@media (max-width:750px) {
+    .section_information img {
+        margin-left: 80px;
+        width: 600px;
+        height: auto;
+    }
+
+    .macbook_information {
+       margin-left: 0px;
+    }
+
+    .macbook_information div {
+        text-align: center;
+    }
+}
+
+@media (max-width:680px) {
+    .section_information img {
+        width: 400px;
+        height: auto;
+        margin-left: 145px;
+    }
+
+    .macbook_information {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width:540px) {
+    .section_information img {
+        width: 200px;
+        height: auto;
+    }
+
+    .apple_icon img {
+        width: 70px;
+        height: auto;
+    }
+
+    .section_information img {
+        margin-left: 170px;
+    }
+
+    .macbook_information {
+        margin-left: -50px;
+    }
+}
+
+@media (max-width:530px) {
+
+    .head_information {
+        font-size: 20px;
+    }
+
+    .section_information img {
+        margin-left: 150px;
+    }
+
+    .macbook_information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section_text div {
+        font-size: 25px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 500px;
+    }
+
+    .footer_price {
+        margin-top: 30px;
+    }
+
+    .bar {
+        width: 300px;
+        height: 1px;
+    }
+   
+}
+
+@media (max-width:425px) {
+    .section_information img {
+        margin-left: 130px;
+    }
+}
+
+@media (max-width:321px) {
+
+    .logo img {
+        margin-left: 37px;
+    }
+
+    .head_information {
+        margin-left: 80px;
+    }
+
+    .apple_icon img {
+        margin-left: 20px;
+    }
+
+    .section_information img {
+        margin-left: 80px;
+    }
+
+    .bar {
+        margin-left: 60px;
+    }
+}
